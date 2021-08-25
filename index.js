@@ -9,7 +9,7 @@ const rfs = require('rotating-file-stream')
 
 const express = require('express')
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
 
 const router = require('./routes/index');
 const routerV1 = require('./routes/v1/index');
