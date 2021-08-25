@@ -35,12 +35,12 @@ Run the project development server
 
 The api can now be accessed at
 
-    http://localhost:3000
+    http://localhost:3000/api/v1
 
 To check the list of available api and can be accessed at
 
-    http://localhost:3000/search
-    http://localhost:3000/detail
+    http://localhost:3000/api/v1/search
+    http://localhost:3000/api/v1/detail
 
 
 ----------
@@ -48,7 +48,7 @@ To check the list of available api and can be accessed at
 #### Available API endpoint:
 Search
 
-    http://localhost:3000/search
+    http://localhost:3000/api/v1/search
 
 Query String
 
@@ -59,16 +59,22 @@ Query String
 
 Example: 
 
-``` http://localhost:3000/search?title=Batman&page=1 ```
+``` http://localhost:3000/api/v1/search?title=Batman&page=1 ```
 
 ----------
     
 Detail
 
-    http://localhost:3000/detail/:id
+    http://localhost:3000/api/v1/detail/:id
 
 :id -> imdbID ( You could browse any movie in IMDB and get the id on the url ) and it is required
 
 Example:
 
-``` http://localhost:3000/detail/tt4154796 ```
+``` http://localhost:3000/api/v1/detail/tt4154796 ```
+
+----------
+
+Run the unit-test with jest
+
+    npm run test
