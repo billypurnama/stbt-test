@@ -4,7 +4,7 @@
   "description": "Movie API made with Express",
   "main": "index.js",
   "scripts": {
-    "test": "jest tests/unit --coverage --coverageDirectory=coverage/unit"
+    "test": "jest tests --coverage --coverageDirectory=coverage"
   },
   "repository": {
     "type": "git",
