@@ -2,6 +2,7 @@ require('dotenv').config()
 
 const axios = require('axios')
 const api = require('../constants/api')
+const Logs = require('../models/logs')
 
 class MovieController {
   static search (req, res, next) {
@@ -13,6 +14,8 @@ class MovieController {
     if (!title.length) 
       return res.status(400).json({ success: false })
     if (!page) page = 1
+
+    new Logs('/search', JSON.stringify({title, page}))
 
     axios
       .get(`${api.OMDB_URL}?apikey=${process.env.OMDB_API_KEY}&s=${title}&page=${page}`)
@@ -37,6 +40,8 @@ class MovieController {
     } = req.params
 
     if (!id.length) return res.status(400).json({ success: false })
+
+    new Logs('/detail', JSON.stringify({ id }))
 
     axios
       .get(`${api.OMDB_URL}?i=${id}&apikey=${process.env.OMDB_API_KEY}`)
