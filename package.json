@@ -1,7 +1,7 @@
 {
   "name": "stbt-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "Movie API made with Express",
   "main": "index.js",
   "scripts": {
     "test": "jest tests/unit --coverage --coverageDirectory=coverage/unit"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/billypurnama/stbt-test.git"
   },
-  "author": "",
+  "author": "Billy Purnama <billypurnama007@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/billypurnama/stbt-test/issues"
@@ -24,6 +24,7 @@
     "express-validator": "^6.12.1",
     "http-errors": "^1.8.0",
     "morgan-body": "^2.6.6",
+    "mysql": "^2.18.1",
     "rotating-file-stream": "^2.1.5",
     "uuid": "^8.3.2"
   },
