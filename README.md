@@ -25,6 +25,7 @@ To test this locally:
 - `answers` - Contains all of answer for Test number 1, 3, 4
 - `constants` - Contains all of the constants that used on the code
 - `controllers` - Contains all of the application controller
+- `models` - Contains all of the mysql connection that used on the application
 - `routes` - Contains all of the the route definitions for the API
 - `tests` - Contains all of the jest unit-test cases
 
