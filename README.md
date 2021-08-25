@@ -8,7 +8,8 @@ For Answer number 1, 3, 4 could be found at answers directory
 
 To test this online:
 
-[TBD]
+    https://stbt-test.herokuapp.com/api/v1/detail/tt4154796
+    https://stbt-test.herokuapp.com/api/v1/search?title=Batman&page=1
 
 To test this locally:
 
