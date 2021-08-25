@@ -11,8 +11,8 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-const router = require('./routes/index');
-const routerV1 = require('./routes/v1/index');
+const router = require('../routes/index');
+const routerV1 = require('../routes/v1/index');
 
 app.use(cors())
 app.use(express.json());
