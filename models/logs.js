@@ -6,10 +6,11 @@ class Logs {
     const mysql = require('mysql')
 
     const connection = mysql.createConnection({
-      host: process.env.DB_HOST || 'localhost',
-      user: process.env.DB_USER || 'root',
-      password: process.env.DB_PASSWORD || '',
-      database: process.env.DB_NAME || 'db_test',
+      host: process.env.DB_HOST,
+      user: process.env.DB_USER,
+      port: process.env.DB_PORT,
+      database: process.env.DB_NAME,
+      password: process.env.DB_PASSWORD,
     })
   
     connection.connect()
@@ -25,9 +26,7 @@ class Logs {
         '${endpoint}', 
         '${payload}'
       )
-    `, function (err, rows, fields) {
-      if (err) throw err
-    })
+    `)
 
     connection.end()
   }
